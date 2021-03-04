@@ -20,7 +20,7 @@ import { useAuth } from '../../hooks/auth';
 
 import Input from '../../components/Input';
 import Button from '../../components/Button';
-import logoImg from '../../assets/logo@1x.png';
+import logoImg from '../../assets/logo1.png';
 import getValidationErrors from '../../utils/getValidationErrors';
 
 import {
@@ -89,7 +89,7 @@ const SignIn: React.FC = () => {
           contentContainerStyle={{ flex: 1 }}
         >
           <Container>
-            <Image source={logoImg} />
+            <Image source={logoImg} style={{ marginTop: 40 }} />
             <View>
               <Title>Faça seu logon</Title>
             </View>
@@ -127,7 +127,7 @@ const SignIn: React.FC = () => {
         </ScrollView>
       </KeyboardAvoidingView>
       <CreateAccountButton onPress={() => navigation.navigate('SignUp')}>
-        <Icon name="log-in" size={20} color="#ff9000" />
+        <Icon name="log-in" size={20} color="#94b423" />
 
         <CreateAccountButtonText>Criar uma conta</CreateAccountButtonText>
       </CreateAccountButton>

@@ -1,0 +1,2 @@
+android-production
+senha padrão

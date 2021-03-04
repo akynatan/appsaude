@@ -73,7 +73,7 @@ const Dashboard: React.FC = () => {
         data={providers}
         keyExtractor={provider => provider.id}
         ListHeaderComponent={
-          <ProvidersListTitle>Cabeleireiros</ProvidersListTitle>
+          <ProvidersListTitle>Familiares</ProvidersListTitle>
         }
         renderItem={({ item: provider }) => {
           return (
@@ -95,13 +95,13 @@ const Dashboard: React.FC = () => {
               <ProviderInfo>
                 <ProviderName>{provider.name}</ProviderName>
                 <ProviderMeta>
-                  <Icon name="calendar" size={14} color="#ff9000" />
-                  <ProviderMetaText>Segunda à sexta</ProviderMetaText>
+                  <Icon name="calendar" size={14} color="#94b423" />
+                  <ProviderMetaText>21 de abril de 1997</ProviderMetaText>
                 </ProviderMeta>
 
                 <ProviderMeta>
-                  <Icon name="clock" size={14} color="#ff9000" />
-                  <ProviderMetaText>8h ás 18h</ProviderMetaText>
+                  <Icon name="clock" size={14} color="#94b423" />
+                  <ProviderMetaText>Sem consulta agendada</ProviderMetaText>
                 </ProviderMeta>
               </ProviderInfo>
             </ProviderContainer>

@@ -30,19 +30,21 @@ export const Container = styled.View`
 export const Header = styled.View`
   padding: 24px;
   padding-top: ${getStatusBarHeight() + 24}px;
-  background: #28262e;
+  background: #f4ede8;
 
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
 `;
 
-export const Content = styled.ScrollView``;
+export const Content = styled.ScrollView`
+  background: #fff;
+`;
 
 export const BackButton = styled.TouchableOpacity``;
 
 export const HeaderTitle = styled.Text`
-  color: #f4ede8;
+  color: #41413f;
   font-size: 20px;
   font-family: 'RobotoSlab-Regular';
   margin-left: 16px;
@@ -63,13 +65,13 @@ export const ProvidersList = styled(FlatList as new () => FlatList<Provider>)`
 `;
 
 export const ProviderContainer = styled(RectButton)<ProviderContainerProps>`
-  background: #3e3b47;
+  background: #fff;
   flex-direction: row;
   align-items: center;
   padding: 8px 12px;
   margin-right: 16px;
   border-radius: 10px;
-  background: ${props => (props.selected ? '#ff9000' : '#3e3b47')};
+  background: ${props => (props.selected ? '#016a92' : '#f4ede8')};
 `;
 
 export const ProviderAvatar = styled.Image`
@@ -82,21 +84,21 @@ export const ProviderName = styled.Text<ProviderNameProps>`
   margin-left: 8px;
   font-family: 'RobotoSlab-Medium';
   font-size: 16px;
-  color: ${props => (props.selected ? '#232129' : '#f4ede8')};
+  color: ${props => (props.selected ? '#94b423' : '#41413f')};
 `;
 
 export const Calendar = styled.View``;
 
 export const Title = styled.Text`
   font-family: 'RobotoSlab-Medium';
-  color: #f4ede8;
+  color: #41413f;
   font-size: 24px;
   margin: 0 24px 24px;
 `;
 
 export const OpenDayPickerButton = styled(RectButton)`
   height: 46px;
-  background: #ff9000;
+  background: #016a92;
   border-radius: 10px;
   align-items: center;
   justify-content: center;
@@ -106,7 +108,7 @@ export const OpenDayPickerButton = styled(RectButton)`
 export const OpenDayPickerButtonText = styled.Text`
   font-family: 'RobotoSlab-Medium';
   font-size: 16px;
-  color: #232129;
+  color: #fff;
 `;
 
 export const Schedule = styled.View`
@@ -136,18 +138,18 @@ export const Hour = styled(RectButton)<HourProps>`
   margin-right: 8px;
 
   opacity: ${props => (props.available ? 1 : 0.3)};
-  background: ${props => (props.selected ? '#ff9000' : '#3e3b47')};
+  background: ${props => (props.selected ? '#94b423' : '#f4ede8')};
 `;
 
 export const HourText = styled.Text<HourTextProps>`
-  color: ${props => (props.selected ? '#232129' : '#f4ede8')};
+  color: ${props => (props.selected ? '#232129' : '#41413f')};
   font-family: 'RobotoSlab-Regular';
   font-size: 16px;
 `;
 
 export const CreateAppointmentButton = styled(RectButton)`
   height: 50px;
-  background: #ff9000;
+  background: #016a92;
   border-radius: 10px;
   align-items: center;
   justify-content: center;
@@ -157,5 +159,5 @@ export const CreateAppointmentButton = styled(RectButton)`
 export const CreateAppointmentButtonText = styled.Text`
   font-family: 'RobotoSlab-Medium';
   font-size: 16px;
-  color: #232129;
+  color: #fff;
 `;
